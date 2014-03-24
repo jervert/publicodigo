@@ -1,0 +1,68 @@
+/* equivalencia 10px=1em. */
+html {font-size: 125%;}
+body {font-size: .5em; font-family:arial,sans-serif;}
+
+/*body, html{font-size: 62.5%;}
+body {font-size: 101%;font-family:arial,sans-serif;}
+html>/**//*body {font-size: 100%;}*/
+
+/* inicializacion de las propiedades del modelo de caja a cero */
+* { margin:0; padding:0; }
+fieldset, img, acronym, abbr {border:0;}
+
+/* imagenes como caja de bloque principal */
+img {display: block;}
+
+/*  supresion de los marcadores de las listas */
+ol, ul { list-style:none; }
+
+/* tablas */
+table {border-collapse:collapse; border-spacing:0;}
+
+/* dimension de fuente por defecto para los elementos principales */
+li p, li li, li address, li dt, li dd, dd p, dd li, td p, td li, th p, th li, td dt, td dd, th dt, th dd, address p, address li, h1, h2, h3, h4, h5, h6 {font-size: 1em;}
+p, pre, address, li, dt, dd, th, td, caption, legend {font-size: 1em;}
+input.texto, select {font-size:1em; font-family:sans-serif; vertical-align:middle;}
+
+/* redefinicion del modelo de caja para los elementos DIV y declaracion de la clase 'clear' para el resto de elementos para evitar problemas de entidad con las flotaciones */
+.clear:after, div:after {content: ""; display: block; clear: both; height: 0; visibility: hidden;}
+.clear, div { height:auto; min-height: 0;}
+	* html .clear {height: 1%;}
+	* html div {height: 1%;}
+
+/* definicion de la presentacion general de los enlaces */
+a {color:#06c;}
+a:hover, a:focus, a:active {color:#CC3D00;}
+
+/*capitalize*/
+.capitalize{text-transform: capitalize;}
+.mayusculas{text-transform: uppercase;}
+
+/* estados */
+.estado_bien {color:#11680C;}
+.estado_mal {color:#C62137;}
+
+/* elementos ocultos */
+.indentado, .movil {display:block; left:-999em; line-height:0; position:absolute; text-indent:-999em; top:-999em;}
+.oculto {display:none;}
+
+body {background:#D3D3B2 url(CODE_IMG_CSS_fondo_principal.png) repeat-x 0 0; font-family:verdana,dejavu sans, sans-serif;} 
+#contenedor {background-color:#fff; border:1px solid #D6D6D6; margin:1em auto; padding:.9em 1.1em; width:72em;}
+
+#cabecera {margin-bottom:1.6em;}
+#cabecera h1,
+#cabecera p {float:left; margin:0;}
+#cabecera h1 {color:#404040; font-size:2.2em;}
+#cabecera p {font-size:1.4em; padding:.5714em 0 0 .8571em;}
+
+#cuerpo {position:relative;}
+#cuerpo p {font-size:1.4em;}
+#cuerpo form p {font-size:1em;}
+#cuerpo textarea {background-color:#EFEFED; border:1px solid #bfbfbf; font-family:lucida console, dejavu sans mono, courier new, monospace; font-size:1.6em; line-height:140%; padding:.3333em; width:44.25em;}
+#cuerpo form p input {cursor:pointer; float:right; font-family:verdana,dejavu sans,sans-serif; font-size:1.4em; margin-top:1em;}
+#cuerpo form .interior-formulario {width:inherit;}
+
+#cuerpo #referencia {bottom:.6em; font-size:1em; left:0; position:absolute;}
+
+#pie {border-top:1px solid #BFBFBF; margin-top:2em; padding:1em 0; text-align:center;}
+#pie p {font-size:1.4em;}
