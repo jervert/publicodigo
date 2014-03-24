@@ -45,7 +45,7 @@ else {$texto2 = '';}
 			</div>
 			<input type="hidden" name="envio" value="1" />
 		</form>
-		<p id="referencia">Un servicio ofrecido por <a href="http://digitalpapyrus.eu">DigitalPapyrus.eu</a><span class="indentado">.</span></p>
+		<p id="referencia">Un servicio ofrecido por <a href="http://digitalpapyrus.eu">DigitalPapyrus.eu</a>. <a href="https://github.com/jervert/publicodigo">Fork me on Github</a><span class="indentado">.</span></p>
 	</div>
 	
 	<div id="pie" class="indentado"><p>&copy; <?php echo date('Y'); ?> <a href="http://digitalpapyrus.eu">DigitalPapyrus.eu</a></p></div>
